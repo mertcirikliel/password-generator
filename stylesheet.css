@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 3em auto 0;
+    padding: 7.1875em 3.25em;
+    border-radius: 12px;
+    background-color: #1F2937;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FEFEFE;
+}
+
+h1 > span {
+    display: block;
+    color: #4ADF86;
+}
+
+p:first-of-type {
+    margin: 0.5em 0 2.55em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #D5D4D8;
+}
+
+.options-container {
+    display: grid;
+    grid-template: auto auto / auto auto;
+}
+
+label {
+    color: #FEFEFE;
+}
+
+.numbers-container,
+.symbols-container {
+    margin-top: 0.5em;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1.5em 0;
+}
+
+.slider-container p {
+    display: inline;
+}
+
+button {
+    margin-right: auto;
+    padding: 0.625em 0.9375em 0.625em 1.0625em;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FEFEFE;
+    background-color: rgb(15, 184, 127);
+}
+
+button:hover {
+    background-color: rgba(15, 184, 127, 0.8);
+    cursor: pointer;
+}
+
+.line {
+    margin: 2.1875em 0;
+    border-bottom: 1px solid #2F3E53;
+}
+
+.output-container {
+    display: flex;
+    gap: 1.5em;
+}
+
+#output {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #273549;
+    color: #55F991;
+    user-select: none;
+    cursor: pointer;
+}
+
+#alert-user {
+    height: 1px;
+    margin: 1em 0 0;
+    color: #4ADF86;
+}

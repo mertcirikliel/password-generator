@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="options-container">
+            <div>
+                <input id="uppercase" type="checkbox">
+                <label for="uppercase">Uppercase letters</label>
+            </div>
+            <div>
+                <input id="lowercase" type="checkbox">
+                <label for="lowercase">Lowercase letters</label>
+            </div>
+            <div class="numbers-container">
+                <input id="numbers" type="checkbox">
+                <label for="numbers">Numbers</label>
+            </div>
+            <div class="symbols-container">
+                <input id="symbols" type="checkbox">
+                <label for="symbols">Symbols</label>
+            </div>
+            <div class="slider-container">
+                <label for="slider">Password length: <span id="length">16</span></label>
+                <input id="slider" type="range" min="0" max="32">
+            </div>
+        </div>
+        <button id="generate-btn">Generate passwords</button>
+        <div class="line"></div>
+        <p id="output"></p>
+        <p id="alert-user"></p>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
